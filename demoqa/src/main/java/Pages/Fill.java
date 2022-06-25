@@ -1,14 +1,36 @@
 package Pages;
 
-import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+
+import java.util.List;
+
 import static com.codeborne.selenide.Selenide.$;
 
 public class Fill {
-    public SelenideElement First_Name = $(By.id("firstName"));
-    public SelenideElement Last_Name = $(By.id("lastName"));
-    public SelenideElement Email = $(By.id("userEmail"));
-    public SelenideElement Number = $(By.id("userNumber"));
-    public SelenideElement Gender = $("#genterWrapper");
-    public SelenideElement Submit;
+    WebDriver driver;
+
+    @FindBy(id = "firstName")
+    public WebElement First_Name;
+    @FindBy(id = "lastName")
+    public WebElement Last_Name;
+    @FindBy(id = "userNumber")
+    public WebElement Number;
+    @FindBys({
+            @FindBy(id = "genterWrapper"),
+            @FindBy(className = "custom-control-label")
+    })
+    public List<WebElement> Gender;
+    @FindBy(id = "submit")
+    public WebElement Submit;
+    public Forms(WebDriver driver) {
+
+        this.driver = driver;
+    }
 }
+
+
+
+
