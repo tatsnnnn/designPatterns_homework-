@@ -4,8 +4,7 @@ import Steps.SecondStep;
 import Steps.ThirdStep;
 import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.qameta.allure.Description;
-import jdk.jfr.Description;
+import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -13,7 +12,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.open;
-
+@Epic("Regression tests")
+@Feature("Fill students data")
 public class Maintest {
     MainSteps mainPageSteps = new MainSteps();
     SecondStep formsSteps = new SecondStep();
@@ -29,7 +29,9 @@ public class Maintest {
         open("https://demoqa.com/");
     }
     @Test(description = "Fill the student information and check it.")
+    @Severity(SeverityLevel.BLOCKER)
     @Description("Successful filling scenario.")
+    @Story("Successful tests")
     public void done(){
 
         mainPageSteps.clickOnForms();
