@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demoqa/SelenideProject.iml" filepath="$PROJECT_DIR$/demoqa/SelenideProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoqa/demoqa.iml" filepath="$PROJECT_DIR$/demoqa/demoqa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/designPatterns_homework-.iml" filepath="$PROJECT_DIR$/.idea/designPatterns_homework-.iml" />
     </modules>
   </component>

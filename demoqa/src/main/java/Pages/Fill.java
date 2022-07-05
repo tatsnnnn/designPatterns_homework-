@@ -25,7 +25,7 @@ public class Fill {
     public List<WebElement> Gender;
     @FindBy(id = "submit")
     public WebElement Submit;
-    public Forms(WebDriver driver) {
+    public void Forms(WebDriver driver) {
 
         this.driver = driver;
     }

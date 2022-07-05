@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.sbtqa.tag.pagefactory:page-factory-core:15.8.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/sbtqa/tag/pagefactory/page-factory-core/15.8.0/page-factory-core-15.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/sbtqa/tag/pagefactory/page-factory-core/15.8.0/page-factory-core-15.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/sbtqa/tag/pagefactory/page-factory-core/15.8.0/page-factory-core-15.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
